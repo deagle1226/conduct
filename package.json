@@ -1,0 +1,23 @@
+{
+  "name": "conduct",
+  "version": "0.0.1",
+  "description": "A simple React Context global state manager",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx babel src --out-dir lib"
+  },
+  "author": "Dan Eagle <deagle1226@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "next": "^7.0.0"
+  }
+}
