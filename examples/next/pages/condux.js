@@ -9,7 +9,7 @@ const diff = (a, b) => {
     return transform(a, (result, value, key) => {
         if (!isEqual(value, b[key])) {
             if (isObject(value) && isObject(b[key])) {
-                const { from, to } = changes(value, b[key])
+                const { from, to } = diff(value, b[key])
                 result.from[key] = from
                 result.to[key] = to
                 return result
