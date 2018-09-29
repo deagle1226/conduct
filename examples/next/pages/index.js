@@ -19,7 +19,7 @@ const ConductedIncrementer = conduce(state => ({ number: state.number }))(({ num
     return (
         <React.Fragment>
             <h1>{number}</h1>
-            <button onClick={() => setState({ number: number + 1 })}>+1</button>
+            <button onClick={() => setState(state => ({ number: state.number + 1 }))}>+1</button>
         </React.Fragment>
     )
 })
